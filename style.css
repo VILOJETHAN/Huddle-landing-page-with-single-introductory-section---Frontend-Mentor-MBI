@@ -1,0 +1,201 @@
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    * {
+        font-family: poppins;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: var(--violet);
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .bg-img1-desktop {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .bg-img-mobile {
+        display: none;
+    }
+
+    :root {
+        --violet: hsl(257, 40%, 49%);
+        --soft-magenta: hsl(300, 69%, 71%);
+        --Purple: hsl(257, 40%, 49%);
+        --Magenta: hsl(300, 69%, 71%);
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 40px 0px 40px;
+        color: white;
+    }
+
+    .text strong {
+        font-size: 65px;
+        font-weight: 500;
+
+        margin-right: 70px;
+    }
+
+    .text p {
+        font-size: 28px;
+
+        font-weight: 300;
+        margin-right: 70px;
+        line-height: 45px;
+    }
+
+    .hero {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    button {
+        width: 300px;
+        height: 70px;
+        border-radius: 50px;
+        border: none;
+        background-color: white;
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    button:hover {
+        background-color: var(--soft-magenta);
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 10px 0px;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 0px 80px 0px 40px;
+    }
+
+    .socials img {
+        width: 50px;
+        border: 1px;
+        border-style: solid;
+        border-color: rgb(224, 212, 212);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 40%;
+        color: white;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .socials img:hover {
+        border: 3px;
+        border-style: solid;
+        box-shadow: rgba(0, 0, 0, 0.267) 5px 5px 10px 0px;
+    }
+
+    footer{
+        background-color: rgba(255, 255, 255, 0.575);
+        padding: 20px;
+    }
+
+   @media only screen and (max-width: 375px) {
+       
+        body{
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            padding: 0px;
+            width: 375px;
+        }
+
+        .bg-img1-desktop {
+            display: none;
+        }
+
+        .bg-img-mobile {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .logo {
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .hero>img{
+            width: 350px;
+            
+        }
+
+        .text{
+            padding: 0px 20px 0px 0px;
+            align-items: center;
+
+        }
+
+        .text strong {
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .text p {
+            font-size: 19px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .socials{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 0px 10px 0px 10px;
+        }
+    }
